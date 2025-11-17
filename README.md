@@ -39,4 +39,25 @@ Sistema completo de gestión académica implementado con Jakarta Persistence API
 
 ### 🔍 Consulta 1: Búsqueda con Filtro LIKE
 
+📄 Consulta 2: Paginación con Ordenamiento
+java
 "SELECT e FROM Estudiante e ORDER BY e.id DESC"
+Paginación con setMaxResults/setFirstResult
+
+Orden descendente por ID
+
+🔗 Consulta 3: JOIN entre Entidades
+java
+"SELECT DISTINCT e FROM Estudiante e JOIN e.matriculas m WHERE m.estado = 'ACTIVA'"
+JOIN entre Estudiante y Matricula
+
+Filtro por estado de matrícula
+
+🛠️ Tecnologías Utilizadas
+Java + JPA (Jakarta Persistence API)
+
+Hibernate como proveedor JPA
+
+MySQL como base de datos
+
+Maven para gestión de dependencias
